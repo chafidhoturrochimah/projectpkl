@@ -27,95 +27,78 @@ if(isset($_POST['login'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login sebagai Admin</title>
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+	<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<body>
-	<div class="login">
-		<h2 class="login-header">Form Login</h2>
-			<form class="login-container">
-				<p>
-					<input type="email" placeholder="Email">
-				</p>
-				<p>
-					<input type="password" placeholder="Password">
-				</p>
-				<p>
-					<input type="submit" value="Log in">
-				</p>
-			</form>
-	</div>
+	<title>Login Sebagai Admin</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Favicons -->
+	<link href="assets/img/logo.png" rel="icon">
+	<link href="assets/img/logo.png" rel="apple-touch-icon">
 
-				<!-- Header -->
-					<!-- <header id="header" class="alt">
-					<h1>DINAS TENAGA KERJA<br> Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kota Malang </h1>
-					<p>Program pelatihan kerja ini memberikan kamu kesempatan untuk mengasah keterampilan agar siap bekerja <br> Terdapat 5 bidang keterampilan yang bisa kamu pilih.</p>
-					</header> -->
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-				<!-- Main -->
-					<div id="main">
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-                                    <h2>Masuk sebagai admin</h2>
-                                    <p>Username&Password: admin&admin</p>
-								</header>
-								
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/login.css" rel="stylesheet">
+	</head>
 
-                            <form method="post">
-                            <div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-                                                    Username
-													<input type="text" name="username" placeholder="Username" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-                                                    Password
-													<input type="password" name="password" placeholder="Password" />
-                                                </div>
-                                                <div class="col-12">
-													<ul class="actions">
-                                                        <li><input type="submit" value="Login" class="primary" name="login" /></li>
-														<li><a href="index.php" class="button">Kembali</a></li>
-													</ul>
-                                                </div>
-                                            </div>
-                                    </form>
-							</section>
+	<body>
 
-						
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">DISNAKER PMPTSP 2022</p>
-					</footer>
-
+		<!-- Form Login -->
+		<section>
+		<div class="wrapper" data-aos="fade-up" data-aos-delay="800">
+			<div class="logo" data-aos="fade-up"> 
+				<img src="assets/img/logo.png" class="img-fluid animated" alt=""> 
 			</div>
+			<div class="text-center mt-4 name"> Login Admin </div>
+			<form class="p-3 mt-3" method="post">
+				<div class="form-field d-flex align-items-center"> 
+					<i class="ri-user-line"></i>
+					<input type="text" name="username" placeholder="Username"> 
+				</div>
+				<div class="form-field d-flex align-items-center"> 
+					<i class="ri-key-line"></i>
+					<input type="password" name="password" id="pwd" placeholder="Password"> 
+				</div> 
+				<button class="btn mt-3" type="submit" value="Login" name="login">Login</button>
+			</form>
+			<!-- <div class="text-center fs-6"> <a href="#">Forget password?</a> or <a href="#">Sign up</a> </div> -->
+		</div>
+		</section>
+		<!-- End Form Login -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- ======= Footer ======= -->
+		<div class="copyright text-center">
+			&copy; Copyright <strong>DISNAKER-PMPTSP</strong>. All Rights Reserved
+		</div>
+		<br><br><br>
+		<!-- End Footer -->
 
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/purecounter/purecounter.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

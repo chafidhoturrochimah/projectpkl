@@ -46,7 +46,7 @@ $date_now = date('Y-m-d');
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-       <h1>DISNAKER-PMPTSP</h1>
+        <h1>DISNAKER-PMPTSP</h1>
       </div> 
 
       <nav id="navbar" class="navbar">
