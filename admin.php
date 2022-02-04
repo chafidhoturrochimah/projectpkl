@@ -41,7 +41,7 @@ include 'backend/tambahAdmin.php';
     </noscript>
 </head>
 
-<body class="is-preload">
+<body class="is-preload" bg-color="blue">
     <!-- Wrapper -->
     <div id="wrapper">
         <nav id="nav">

@@ -11,9 +11,9 @@
     <!-- Favicons -->
     <link href="assets/img/logo.png" rel="icon">
     <link href="assets/img/logo.png" rel="apple-touch-icon">
-
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -29,12 +29,6 @@
     <link href="assets/css/writer.css" rel="stylesheet">
     <link href="assets/css/gradient.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <meta http-equiv="refresh" content="5;url=index.php" />
 </head>
 <body>
@@ -48,7 +42,7 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+            <li><a class="nav-link scrollto" href="#hero">Beranda</a></li>
             <li><a class="nav-link scrollto" href="#about">Pelatihan</a></li>
             <li><a class="nav-link scrollto" href="#services">Tata Cara dan Persyaratan</a></li>
             <li><a class="nav-link scrollto" href="#team">Pengumuman</a></li>
@@ -59,19 +53,14 @@
         </div>
     </header>
     <!-- End Header -->
-    
-    <div class="container">
-        <h1 style="color:black">DINAS TENAGA KERJA<br> Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kota Malang </h1>
+    <br><br><br><br><br><br>
+    <div class="container text-center" data-aos="fade-up" data-aos-delay="80">
+        <h1 style="color:black">Terima Kasih Atas Partisipasi Anda!</h1>
+        <h5>Informasi selanjutnya akan dikirim melalui Whatsapp</h5><br><br>
+        <h6>Anda akan dibawa kembali ke halaman utama dalam 5 detik</h6>
         <br>
-        
-        <h2 style="color:black">Terima Kasih Atas Partisipasi Kamu</h2>
-        <p>Informasi selanjutnya akan dikirim melalui Whatsapp</p>
-        <p>Anda akan dibawa kembali ke halaman utama dalam 5 detik</p>
-        <br>
-
     </div>
-
-    </div>
+    <br><br><br>
     <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
@@ -172,12 +161,22 @@
 		<script src="assets/vendor/php-email-form/validate.js"></script>
 
 		<!-- Template Main JS File -->
-		<script src="assets/js/main.js"></script>
+		<script src="assets/js/main1.js"></script>
 		<script src="assets/js/writer.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- Vendor JS Files -->
+ <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
     
 </body>
 </html>
