@@ -39,9 +39,10 @@ include 'backend/tambahAdmin.php';
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <link rel="stylesheet" href="assets/css/back.css" />
 </head>
 
-<body class="is-preload" bg-color="blue">
+<body class="is-preload" style="background: #ecf0f3">
     <!-- Wrapper -->
     <div id="wrapper">
         <nav id="nav">
@@ -655,7 +656,8 @@ include 'backend/tambahAdmin.php';
         <!-- Footer -->
         <footer id="footer">
         <div class="copyright">
-            &copy; Copyright <strong>DISNAKER-PMPTSP</strong>. All Rights Reserved
+            <h5><font color="black">&copy; Copyright <strong><font color="black">DISNAKER-PMPTSP</font></strong>. All Rights Reserved</font></h5>
+            
           </div>
         </footer>
     </div>
@@ -667,6 +669,7 @@ include 'backend/tambahAdmin.php';
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/mainjs.js"></script>
+    <script src="assets/js/back.js"></script>
 </body>
 
 
@@ -705,5 +708,6 @@ include 'backend/tambahAdmin.php';
 <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+
 
 </html>
