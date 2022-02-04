@@ -150,14 +150,14 @@ $data = mysqli_fetch_array($getdata);
 		<div class="card-body">
 		<form method="post" enctype="multipart/form-data">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-6">
 
                     <div class="form-group">
                         <label>Nama Lengkap:</label>
                         <input type="text" name="fullname" class="form-control" placeholder="Masukan Nama Lengkap" required>
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label>Nomor Identitas (NIK):</label>
                         <input type="text" name="nik" class="form-control" placeholder="Masukan Nomor NIK" required>
@@ -171,7 +171,7 @@ $data = mysqli_fetch_array($getdata);
                         <input type="date" class="form-control" name="dob" min="1970-01-02" max="<?=$date_now;?>" required>
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-3">
                     <div class="form-group">
                         <label>Jenis Kelamin:</label>
                         <select class="form-control" name="gender">
@@ -181,7 +181,7 @@ $data = mysqli_fetch_array($getdata);
                         </select>
                     </div>
                 </div>
-				<div class="col-sm-4">
+				<div class="col-sm-6">
                     <div class="form-group">
                         <label>No Telp:</label>
                         <input type="text" name="telepon" class="form-control" placeholder="Masukan No Telp (Whatsapp) dimulai dengan 62" min="1" value="62"required>
@@ -193,13 +193,13 @@ $data = mysqli_fetch_array($getdata);
 				<div class="col-sm-6">
                     <div class="form-group">
                         <label>Alamat:</label>
-                        <textarea class="form-control" name="alamat" rows="5" id="alamat" placeholder="Masukkan Alamat Lengkap"></textarea>
+                        <textarea class="form-control" name="alamat" rows="5" id="alamat" placeholder="Masukkan Alamat Lengkap" required></textarea>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label>Motivasi:</label>
-                        <textarea class="form-control" name="motivasi" rows="5" id="motivasi" placeholder="Motivasi dan Pengalaman Kerja"></textarea>
+                        <textarea class="form-control" name="motivasi" rows="5" id="motivasi" placeholder="Motivasi dan Pengalaman Kerja" required></textarea>
                     </div>
                 </div>
             </div>

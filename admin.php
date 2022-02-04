@@ -9,14 +9,17 @@ include 'backend/tambahPengumuman.php';
 include 'backend/updateAdmin.php';
 include 'backend/tambahAdmin.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran Online Pelatihan Kerja DISNAKER</title>
+    <title>Admin Pendaftaran Online Pelatihan Kerja DISNAKER</title>
+
+    <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
     <!-- Start datatable css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
@@ -48,23 +51,23 @@ include 'backend/tambahAdmin.php';
                     <li><a href="#persyaratan">Persyaratan</a></li>
                     <li><a href="#pengumuman">Pengumuman</a></li>
                     <li><a href="#tambahAdmin">Tambah Admin</a></li>
+                    <li><a href="logout.php" class="btn btn-danger">Logout</a></li>
                 </ul>
         </nav>
         <div id="main">
             <!-- First Section -->
             <section id="pendaftar" class="main special">
-                <div align="right"><a href="logout.php" class="btn btn-danger">Logout</a></div>
                 <header class="major">
                     <h2><strong>Kelola Pendaftar</strong></h2>
                 </header>
                 <table id="table2" class="display" width="100%">
-                    <thead style="background-color:#2b2b2b;color:#fff">
+                    <thead style="background-color:#2b2b2b;">
                         <tr>
-                            <th>Register</th>
-                            <th>Posisi</th>
-                            <th>Nama</th>
-                            <th>Status</th>
-                            <th>Aksi</th>
+                            <th class="text-center" >Register</th>
+                            <th class="text-center" >Posisi</th>
+                            <th class="text-center" >Nama</th>
+                            <th class="text-center" >Status</th>
+                            <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -109,7 +112,7 @@ include 'backend/tambahAdmin.php';
 
                                                 <!-- Modal Header -->
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title">Update Status Pendaftaran <?= $nama; ?></h4>
+                                                    <h4 class="modal-title"><b>Update Status Pendaftaran <?= $nama; ?></b></h4>
                                                 </div>
 
                                                 <!-- Modal body -->
@@ -209,10 +212,10 @@ include 'backend/tambahAdmin.php';
 
             <section id="job" class="main special">
                 <header class="major">
-                    <h2><strong>Kelola Job</strong></h2>
+                    <h2><strong>Kelola Jenis Pelatihan</strong></h2>
                 </header>
                 <br>
-                <div align="right"><button type="button" class="primary" data-toggle="modal" data-target="#myModal">Tambah Job Baru</button></div>
+                <div align="right"><button type="button" class="primary" data-toggle="modal" data-target="#myModal">Tambah Pelatihan Baru</button></div>
                 <br>
                 <div class="data-tables datatable-dark">
                     <table id="table1" class="display" width="100%">
@@ -343,8 +346,6 @@ include 'backend/tambahAdmin.php';
                                                 <option value="WFO">WFO</option>
                                                 <option value="Mix">MIX WFH-WFO / Rolling</option>
                                             </select>
-
-                                            
                                         </div>
 
                                         <!-- Modal footer -->
@@ -653,7 +654,9 @@ include 'backend/tambahAdmin.php';
             </div>
         <!-- Footer -->
         <footer id="footer">
-            <p class="copyright">DISNAKER PMPTSP 2022</p>
+        <div class="copyright">
+            &copy; Copyright <strong>DISNAKER-PMPTSP</strong>. All Rights Reserved
+          </div>
         </footer>
     </div>
     <!-- Scripts -->
@@ -663,7 +666,7 @@ include 'backend/tambahAdmin.php';
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mainjs.js"></script>
 </body>
 
 

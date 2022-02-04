@@ -5,7 +5,7 @@ require 'backend/koneksi.php';
 if(!isset($_SESSION['username'])){
 
 } else {
-    header('location:admin.php');
+    header('<location:admin.php');
 }
 
 if(isset($_POST['login'])){

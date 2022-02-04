@@ -1,18 +1,31 @@
 <?php
-
+$fullname = $_POST['fullname'];
+$gender = $_POST['gender'];
+$dob = $_POST['dob'];
+$alamat = $_POST['alamat'];
+$email = $_POST['email'];
+$telepon = $_POST['telepon'];
+$motivational = $_POST['motivational'];
+$ktp = $_POST['ktp'];
 if(isset($_POST['apply'])){
-    $a = $_POST['fullname'];
-    $b = $_POST['gender'];
-    $c = $_POST['kotalahir'];
-    $d = $_POST['dob'];
-    $e = $_POST['alamat'];
-    $f = $_POST['email'];
-    $g = $_POST['telepon'];
-    $h = $_POST['motivasi'];
-    $i = $_POST['linkedin'];
-    $j = $_POST['portfolio'];
+    extract($_POST);
+    $nama_file   = $_FILES['foto']['name'];
+    if(!empty($nama_file)){
+    // Baca lokasi file sementar dan nama file dari form (fupload)
+    $lokasi_file = $_FILES['foto']['tmp_name'];
+    $tipe_file = pathinfo($nama_file, PATHINFO_EXTENSION);
+    $file_foto = $idreg.".".$tipe_file;
 
-    $insertdata = mysqli_query($conn,"insert into registrant (name,gender,kotalahir,dob,alamat,email,telepon,motivational,linkedin,portfolio) values('$a','$b','$c','$d','$e','$f','$g','$h','$i','$j')");
+    // Tentukan folder untuk menyimpan file
+    $folder = "../img/$file_foto";
+    // Apabila file berhasil di upload
+    move_uploaded_file($lokasi_file,"$folder");
+    }
+    else
+        $file_foto="-";+
+
+    $insertdata = mysqli_query($conn,"insert into registrant (name,gender,dob,alamat,email,telepon,motivational,foto,ktp,status) 
+    values('$fullname','$gender','$dob','$alamat','$email','$telepon','$motivational','$ktp','$file_foto','$status', 'belum dicek')");
 
     if($insertdata){
         header('location:thanks.php');
